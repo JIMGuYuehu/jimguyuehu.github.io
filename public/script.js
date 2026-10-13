@@ -11,7 +11,7 @@
     toggle.setAttribute('aria-label', chinese ? 'Switch to English' : '切换为中文');
     document.querySelector('nav').setAttribute('aria-label', chinese ? '主导航' : 'Main navigation');
     document.querySelector('.scroll-link').setAttribute('aria-label', chinese ? '查看研究方向' : 'Scroll to research');
-    document.title = chinese ? 'Weiji Hu · 气候与大气科学' : 'Weiji Hu · Climate & Atmospheric Science';
+    document.title = chinese ? 'Weiji Hu · 大气科学' : 'Weiji Hu · Climate & Atmospheric Science';
     try { localStorage.setItem('weiji-homepage-language', language); } catch { /* Storage is optional. */ }
   }
   toggle.addEventListener('click', () => setLanguage(document.documentElement.lang === 'en' ? 'zh' : 'en'));
